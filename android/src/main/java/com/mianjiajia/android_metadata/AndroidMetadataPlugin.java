@@ -38,10 +38,7 @@ public class AndroidMetadataPlugin implements MethodCallHandler {
     public void onMethodCall(MethodCall call, Result result) {
         try {
             Context context = mRegistrar.context();
-            if (call.method.equals("getPlatformVersion")) {
-                result.success("Android " + android.os.Build.VERSION.RELEASE);
-
-            } else if (call.method.equals("getMetaDataAsMap")) {
+            if (call.method.equals("getMetaDataAsMap")) {
                 PackageManager pm = context.getPackageManager();
 
                 ApplicationInfo appInfo = pm.getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);

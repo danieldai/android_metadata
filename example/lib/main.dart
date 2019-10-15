@@ -12,7 +12,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
   Map<String, String> _metadata = Map();
 
   @override
@@ -23,15 +22,7 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    String platformVersion;
     Map<String, String> metadata = Map();
-
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      platformVersion = await AndroidMetadata.platformVersion;
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
-    }
 
     try {
       metadata = await AndroidMetadata.metaDataAsMap;
@@ -46,7 +37,6 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
       _metadata = metadata;
     });
   }
@@ -59,7 +49,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_metadata\n'),
+          child: Text('Metadata: $_metadata\n'),
         ),
       ),
     );
