@@ -10,6 +10,11 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="android_metadata_example"
         android:icon="@mipmap/ic_launcher">
+
+        <meta-data
+            android:name="VENDOR"
+            android:value="MIANJIAJIA"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
