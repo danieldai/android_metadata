@@ -3,11 +3,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:android_metadata/android_metadata.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('android_metadata');
+  const MethodChannel channel = MethodChannel('plugins.mianjiajia.com/android_metadata');
 
   setUp(() {
     channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
+      return {'VENDOR': 'MIANJIAJIA'};
     });
   });
 
@@ -15,7 +15,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await AndroidMetadata.platformVersion, '42');
+  test('getMetaDataAsMap', () async {
+    expect(await AndroidMetadata.metaDataAsMap, {'VENDOR': 'MIANJIAJIA'});
   });
 }

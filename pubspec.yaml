@@ -1,8 +1,8 @@
 name: android_metadata
 description: A flutter plugin to get metadata defined in AndroidManifest.xml.
 version: 0.0.1
-author: Daniel Dai
-homepage:
+author: Danie lDai <daeming@gmail.com>
+homepage: https://github.com/danieldai/android_metadata
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
