@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.1.0
 
-* TODO: Describe initial release.
+* Support retrieving all metadata defined in AndroidManifest.xml <application> as a Map<String, String>
