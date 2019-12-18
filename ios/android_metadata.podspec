@@ -1,7 +1,6 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
-use_frameworks!
 Pod::Spec.new do |s|
   s.name             = 'android_metadata'
   s.version          = '0.0.1'
