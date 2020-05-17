@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e2dc934-792c-4b31-9e37-8431a0c305db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/android_metadata.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/android_metadata.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="0e2dc934-792c-4b31-9e37-8431a0c305db" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +67,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576676259272</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mark android_metadata is android only in pubspec">
+      <created>1589698405085</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589698405085</updated>
+    </task>
+    <task id="LOCAL-00003" summary="specify flutter: &quot;&gt;=1.12.0 &lt;2.0.0&quot;">
+      <created>1589698560590</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589698560590</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +100,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Fix &quot;Please contact the author or set the `SWIFT_VERSION` attribute&quot;" />
     <MESSAGE value="add use_frameworks!" />
-    <option name="LAST_COMMIT_MESSAGE" value="add use_frameworks!" />
+    <MESSAGE value="mark android_metadata is android only in pubspec" />
+    <MESSAGE value="specify flutter: &quot;&gt;=1.12.0 &lt;2.0.0&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="specify flutter: &quot;&gt;=1.12.0 &lt;2.0.0&quot;" />
   </component>
 </project>
