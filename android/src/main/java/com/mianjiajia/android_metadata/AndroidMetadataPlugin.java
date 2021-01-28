@@ -43,11 +43,11 @@ public class AndroidMetadataPlugin implements MethodCallHandler {
 
                 ApplicationInfo appInfo = pm.getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
 
-                Map<String, String> map = new HashMap<>();
+                Map<String, Object> map = new HashMap<>();
 
                 Set<String> ks = appInfo.metaData.keySet();
                 for (String key : ks) {
-                    map.put(key, String.valueOf(appInfo.metaData.getString(key)));
+                    map.put(key, String.valueOf(appInfo.metaData.get(key)));
                 }
 
                 result.success(map);
