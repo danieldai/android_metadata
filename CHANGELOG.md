@@ -1,3 +1,8 @@
+## 0.1.3
+
+* Migrate to new flutter plugin API.
+* Fix Obtain the meta-data value may be integer type: https://github.com/danieldai/android_metadata/issues/3
+
 ## 0.1.2
 
 * Specify this plugin is android only
