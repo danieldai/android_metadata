@@ -5,6 +5,8 @@ import 'package:android_metadata/android_metadata.dart';
 void main() {
   const MethodChannel channel = MethodChannel('plugins.mianjiajia.com/android_metadata');
 
+  TestWidgetsFlutterBinding.ensureInitialized();
+
   setUp(() {
     channel.setMockMethodCallHandler((MethodCall methodCall) async {
       return {'VENDOR': 'MIANJIAJIA'};
@@ -16,6 +18,6 @@ void main() {
   });
 
   test('getMetaDataAsMap', () async {
-    expect(await AndroidMetadata.metaDataAsMap, {'VENDOR': 'MIANJIAJIA'});
+    expect((await AndroidMetadata.metaDataAsMap)['VENDOR'], 'MIANJIAJIA');
   });
 }

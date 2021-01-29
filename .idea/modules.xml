@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/android_metadata.iml" filepath="$PROJECT_DIR$/.idea/android_metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_metadata.iml" filepath="$PROJECT_DIR$/android_metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/android_metadata_android.iml" filepath="$PROJECT_DIR$/android/android_metadata_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/android_metadata_example_android.iml" filepath="$PROJECT_DIR$/example/android/android_metadata_example_android.iml" />
     </modules>
   </component>
 </project>

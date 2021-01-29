@@ -1,1 +1,1 @@
-{"_info":"// This is a generated file; do not edit or check into version control.","dependencyGraph":[{"name":"android_metadata","dependencies":[]}]}
+{"info":"This is a generated file; do not edit or check into version control.","plugins":{"ios":[],"android":[{"name":"android_metadata","path":"D:\\\\AndroidStudioProjects\\\\android_metadata\\\\","dependencies":[]}],"macos":[],"linux":[],"windows":[],"web":[]},"dependencyGraph":[{"name":"android_metadata","dependencies":[]}],"date_created":"2021-01-29 17:17:56.452367","version":"1.22.5"}
