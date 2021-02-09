@@ -16,3 +16,7 @@ Map<String, String> metadata = Map();
 metadata = await AndroidMetadata.metaDataAsMap;
 
 ```
+
+## Kindly powered by [JetBrains](https://jb.gg/OpenSource)
+
+![JetBrains](/assets/jetbrains-logos/jetbrains.svg)
