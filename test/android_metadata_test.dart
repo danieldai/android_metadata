@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getMetaDataAsMap', () async {
-    expect((await AndroidMetadata.metaDataAsMap)['VENDOR'], 'MIANJIAJIA');
+    expect((await AndroidMetadata.metaDataAsMap)!['VENDOR'], 'MIANJIAJIA');
   });
 }
