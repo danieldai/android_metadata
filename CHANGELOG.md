@@ -1,3 +1,7 @@
+## 0.2.0
+
+* Migrate to null safety
+
 ## 0.1.3
 
 * Migrate to new flutter plugin API.
