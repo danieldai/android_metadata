@@ -5,7 +5,7 @@ author: Daniel Dai <daniel@danieldai.com>
 homepage: https://github.com/danieldai/android_metadata
 
 environment:
-  sdk: '>=2.12.3 <3.0.0'
+  sdk: '>=2.12.2 <3.0.0'
 
 dependencies:
   flutter:
