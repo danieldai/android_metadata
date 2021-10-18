@@ -15,6 +15,7 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
+import io.flutter.plugin.common.PluginRegistry;
 
 /** AndroidMetadataPlugin */
 public class AndroidMetadataPlugin implements FlutterPlugin, MethodCallHandler {
@@ -25,6 +26,14 @@ public class AndroidMetadataPlugin implements FlutterPlugin, MethodCallHandler {
   private MethodChannel channel;
 
   private Context context;
+
+  /**
+   * Plugin registration.
+   */
+  public static void registerWith(PluginRegistry.Registrar registrar) {
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), "plugins.mianjiajia.com/android_metadata");
+    channel.setMethodCallHandler(new AndroidMetadataPlugin());
+  }
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
