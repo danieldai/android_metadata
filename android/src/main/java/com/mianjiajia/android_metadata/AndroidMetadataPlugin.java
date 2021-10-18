@@ -27,12 +27,21 @@ public class AndroidMetadataPlugin implements FlutterPlugin, MethodCallHandler {
 
   private Context context;
 
+  public AndroidMetadataPlugin() {
+
+  }
+
+  public AndroidMetadataPlugin(MethodChannel channel, Context context) {
+    this.channel = channel;
+    this.context = context;
+  }
+
   /**
    * Plugin registration.
    */
   public static void registerWith(PluginRegistry.Registrar registrar) {
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "plugins.mianjiajia.com/android_metadata");
-    channel.setMethodCallHandler(new AndroidMetadataPlugin());
+    channel.setMethodCallHandler(new AndroidMetadataPlugin(channel, registrar.context()));
   }
 
   @Override
