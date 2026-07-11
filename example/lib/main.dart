@@ -12,7 +12,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Map<String, String> _metadata = Map();
+  Map<String, String> _metadata = {};
 
   @override
   void initState() {
@@ -22,12 +22,11 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    Map<String, String> metadata = Map();
+    Map<String, String> metadata = {};
 
     try {
       metadata = await AndroidMetadata.metaDataAsMap;
     } on PlatformException {
-      ;
     }
 
 
