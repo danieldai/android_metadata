@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     Map<String, String> metadata = {};
 
     try {
-      metadata = await AndroidMetadata.metaDataAsMap;
+      metadata = await AndroidMetadata.metaDataAsMap ?? {};
     } on PlatformException {
     }
 

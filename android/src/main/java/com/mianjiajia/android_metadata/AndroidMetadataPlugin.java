@@ -37,7 +37,7 @@ public class AndroidMetadataPlugin implements FlutterPlugin, MethodCallHandler {
 
 
   @Override
-  public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
+  public void onAttachedToEngine(@NonNull FlutterPlugin.FlutterPluginBinding flutterPluginBinding) {
     channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "plugins.mianjiajia.com/android_metadata");
     channel.setMethodCallHandler(this);
     context = flutterPluginBinding.getApplicationContext();
@@ -68,7 +68,7 @@ public class AndroidMetadataPlugin implements FlutterPlugin, MethodCallHandler {
   }
 
   @Override
-  public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
+  public void onDetachedFromEngine(@NonNull FlutterPlugin.FlutterPluginBinding binding) {
     channel.setMethodCallHandler(null);
   }
 }
